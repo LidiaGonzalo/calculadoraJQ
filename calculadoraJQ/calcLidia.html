@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>calcu Lidia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/estilos.css" /><!--estilos calcu -->
+  <link href="../css/bootstrap.css" rel="stylesheet"><!--estilos bootstrap -->
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> 
+  <!--<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>última versión jquery -->
+  <script src="js/calculadora.js"></script>
+</head>
+<body>
+  <div class="container">
+<nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#miMenu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="miMenu">
+      <ul class="nav navbar-nav">
+        <li><a href="../index.html">INICIO</a></li>
+        <li class="active"><a href="#">CALCULADORA</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="ejercicio">
+  <div class="clear"> </div>
+</div>
+</div>
+  <h1 id="h1"></h1>
+<div id="calculadora">
+  <div id="display">
+  <input id="pantalla" size="12">
+  <span class="efectoPantalla">88888888888888</span>
+  </div>
+  <div id="botones">
+      <button id="ToM" class="memoria" title="ToM: mueve el número del cajetín a la memoria">ToM</button>
+      <button id="FromM" class="memoria" title="FromM: mueve el número de la memoria al cajetín">FrM</button>
+     <ul id="pantallaSolar">
+      <li class="solar"></li>
+      <li class="solar"></li>
+      <li class="solar"></li>
+      <li class="solar"></li>
+     </ul>
+  </div>
+  <div id="botones">
+    <button id="uno" class="numero">1</button>
+    <button id="dos" class="numero">2</button>
+    <button id="tres" class="numero">3</button>
+    <button id="suma" class="operacion">+</button>
+  </div>
+  <div id="botones">
+    <button id="cuatro" class="numero">4</button>
+    <button id="cinco" class="numero">5</button>
+    <button id="seis" class="numero">6</button>
+    <button id="resta" class="operacion" title="para realizar resta de nums negativos: pulsar tecla '-' + 'tecla num' + '=' ">-</button>
+  </div>
+  <div id="botones">
+    <button id="siete" class="numero">7</button>
+    <button id="ocho" class="numero">8</button>
+    <button id="nueve" class="numero">9</button>
+    <button id="por" class="operacion">x</button>
+  </div> 
+  <div id="botones">
+    <button id="coma" class="numero" title="números decimales/separador números para el ∑ y &#8719;">,</button>
+    <button id="cero" class="numero">0</button>
+    <button id="igual">=</button>
+    <button id="division" class="operacion">&#247;</button>
+  </div>
+  <div id="botones">
+    <button id="cuadrado" class="operacion">x<sup>2</sup></button>
+    <button id="inverso" class="operacion">1/x</button>
+    <button id="factorial" class="operacion">!</button>
+    <button id="raiz" class="operacion">&#8730;</button>
+  </div>
+  <div id="botones">
+    <button id="parteEntera" class="operacion" title="parte entera de un número: si el número decimal introducido es negativo, redondea por arriba; si es positivo redondea hacia abajo">[x]</button>
+    <button id="potenciaDos" class="operacion">2<sup>n</sup></button>
+    <button id="elevado" class="operacion">x<sup>y</sup></button>
+    <button id="sumatorio" class="operacion" title="SUMATORIO:Suma de n números. Separa los números que quieras sumar con la tecla ',' o  '.' con el teclado del ordenador ej:∑ 2.3.5.4=14">∑</button><!-- &#8512;-->
+  </div>
+  <div id="botones">
+    <button id="c" class="especiales" title="borrar pantalla">C</button>
+    <button id="retroceso" class="especiales" title="borrar última cifra">&#9668;</button>
+    <button id="productorio" class="operacion" title="PRODUCTORIO:producto de varios números, separados por la tecla ',' de la calculadora o por '.' con el tecado del ordenador">&#8719;</button>
+  </div>
+</div>
+<div class="panel-footer">Lidia Gonzalo López</div>
+</body>
+</html>
+
